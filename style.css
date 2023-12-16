@@ -1,4 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Minecraft";
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url(Fonts/Minecraft\ Font.otf);
+}
 h1{
     margin: auto;
     text-align: center;
+    padding: 100px;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 5px 5px #2A2A2A
 }
+body{
+    background-image: url(images/Dirt-Background.jpg);
+}
+.container {
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    border-radius: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#questions{
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn-group{
+    display: flex;
+    gap: 20px;
+}
+.btn-group button{
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.btn-group button:hover{
+    color: white;
+    background-image: url(images/lava.jpg);
+}
+
+.btn-group button:not(:last-child){
+    border-bottom: none;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 35px;
+}
+
