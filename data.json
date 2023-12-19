@@ -1,6 +1,7 @@
-{
-    "questions": [
+
+    [
         {
+            "number": 1,
             "question": "What Block is this?",
             "image": "Grass Block Image",
             "options": [
@@ -18,7 +19,40 @@
                 "Slender Dude",
                 "Enderman",
                 "Skinny Man"
-            ]
+            ],
+            "answer": "Enderman"
+        },
+        {
+            "number": 3,
+            "question": "Who created Minecraft?",
+            "image": "notch image",
+            "options": [
+                "Block Man",
+                "Notch",
+                "Mark Zukerburg"
+            ],
+            "answer": "Notch"
+        },
+        {
+            "number": 4,
+            "question": "Who is this man?",
+            "image": "herobrine image",
+            "options": [
+                "Scary Steve",
+                "Herobrine",
+                "Steve"
+            ],
+            "answer":"Herobrine"
+        },
+        {
+            "number": 5,
+            "question": "Who's this Rizzler?",
+            "image":"Steve Rizz Image",
+            "options": [
+                "Steve",
+                "Mark",
+                "Block Man"
+            ],
+            "answer": "Steve"
         }
     ]
-}
