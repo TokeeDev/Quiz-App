@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft quiz by KwaziiMedia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
     <h1>Minecraft Quiz</h1>
     <div class="container">
-         <h2 id="questions">What Block is this?</h2>
+        <button id="startButton" onlick="start()"></button>
+         <h2 id="question">What Block is this?</h2>
                 <img id="image" src="images/grass-block.png.png" alt="grass block image">
         <div class="btn-group">
-            <button class="questions" id="answer1">Grass Block</button>
-            <button class="questions" id="answer2">Bedrock Block</button>
-            <button class="questions" id="answer3">Glass Block</button>
+            <button id="btn1" type="radio"  class="answer" >Grass Block</button>
+            <button id="btn2" type="radio"  class="answer" >Bedrock Block</button>
+            <button id="btn3" type="radio"  class="answer" >Glass Block</button>
         </div>
+        <button id="next">Next</button>
     </div>
     <h1>By KwaziiMedia</h1>
+
+    <script src="main.js"></script>
 </body>
 </html>
