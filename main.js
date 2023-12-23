@@ -63,12 +63,18 @@ let i = 0;
 const header = document.getElementById("question");
 const img = document.getElementById("image");
 const buttonGroup = document.querySelectorAll(".answer");
+let score = 0;
 //Changes Web Elements like Question, Image, Buttons, and Next
 document.getElementById("next").addEventListener("click", () => {
+    //increments i so it will move according to the question in the array
     i++
+    //changes the question
     header.textContent = questions[i].question;
+    //changes image when next is pressed
     img.src = questions[i].image
+    //iterates throuhg the button group so each button is acceesable 
     buttonGroup.forEach((element,index) => {
+        //each buttons text gets changed when next is clicked according to the question
         element.innerText = questions[i].options[index]
         //checks if answer is right or wrong
         element.id = i;
@@ -80,11 +86,19 @@ function checkAnswer(e) {
     const i = e.currentTarget.id
     const userChoice = e.currentTarget.innerText
     const answer = questions[i].answer
-    
+    const button = e.currentTarget;
+    if(userChoice === answer){
+        button.style.backgroundColor = "green"
+    }else{
+        button.style.backgroundColor = "red"
+
+    }
+    removeEventListener
     console.log(userChoice === answer ? "yes" : "no")
     console.log(userChoice)
     console.log(answer)
+    console.log(i)
     }
+
 //score 
 
-let score = 0;
