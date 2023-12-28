@@ -70,4 +70,17 @@ img{
     text-shadow: 3px 3px #2A2A2A;
     color: whitesmoke;
 }
-
+@media screen and (max-width: 414px){
+ .container {
+    width: 360px;
+}
+.btn-group {
+    gap: 15px
+}
+.btn-group button{
+    width: 100px;
+}
+#next {
+    margin-top: 20px;
+}
+}
